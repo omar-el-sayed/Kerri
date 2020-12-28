@@ -1,0 +1,438 @@
+/* General Style */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background-color: rgba(166, 175, 189, 0.3);
+}
+
+.main-color {
+    color: #e65f78;
+}
+
+.main-background {
+    background-color: #e65f78;
+}
+
+.subtitle {
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+/* *********************************************************************************************************** */
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #e65f78;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.5s;
+    font-size: 15px;
+    margin: 0 7px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e65f78;
+}
+
+/* *********************************************************************************************************** */
+
+header {
+    background-image: url('../imgs/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+header .layer {
+    background-color: rgba(0, 0, 0, 0.69);
+}
+
+header .caption h4 {
+    font-size: 1.5rem;
+}
+
+header .caption h1 {
+    font-size: 3.375rem;
+}
+
+header .caption h1::after {
+    content: "";
+    animation: typing 3s linear infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    5% {
+        content: "K|";
+    }
+    10% {
+        content: "Ke|";
+    }
+    15% {
+        content: "Ker|";
+    }
+    20% {
+        content: "Kerr|";
+    }
+    25% {
+        content: "Kerri|";
+    }
+    30% {
+        content: "Kerri |";
+    }
+    35% {
+        content: "Kerri D|";
+    }
+    40% {
+        content: "Kerri De|";
+    }
+    45% {
+        content: "Kerri Deo|";
+    }
+    50% {
+        content: "Kerri Deo.|";
+    }
+    55% {
+        content: "Kerri Deo|";
+    }
+    60% {
+        content: "Kerri De|";
+    }
+    65% {
+        content: "Kerri D|";
+    }
+    70% {
+        content: "Kerri |";
+    }
+    75% {
+        content: "Kerri|";
+    }
+    80% {
+        content: "Kerr|";
+    }
+    85% {
+        content: "Ker|";
+    }
+    90% {
+        content: "Ke|";
+    }
+    95% {
+        content: "K|";
+    }
+    100% {
+        content: "|";
+    }
+}
+
+header .caption p {
+    color: rgba(255, 255, 255, 0.75)
+}
+
+header .caption a {
+    border: 2px solid #f5f5f5;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    transition: all 0.5s;
+}
+
+header .caption a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+header .setting {
+    width: 41px;
+    height: 41px;
+    background-color: #2b2424;
+    top: 17%;
+    left: 0;
+    cursor: pointer;
+}
+
+header .setting i {
+    font-size: 21px;
+}
+
+header .scroll {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 28px;
+    height: 47px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrolling 2s infinite alternate;
+}
+
+header .scroll::after {
+    content: "";
+    background-color: #fff;
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+@keyframes scrolling {
+    0% {
+        bottom: 40px;
+    }
+    20% {
+        bottom: 60px;
+    }
+    40% {
+        bottom: 40px;
+    }
+    60% {
+        bottom: 50px;
+    }
+    80% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 70px;
+    }
+}
+
+/* *********************************************************************************************************** */
+
+.about .social-icons .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.about .social-icons .icon:hover {
+    color: #e65f78;
+    border-color: #e65f78;
+}
+
+/* *********************************************************************************************************** */
+
+.services .item {
+    border: 1px solid #e8e8e8;
+}
+
+.services .item .icon {
+    color: #e65f78;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .item .icon i {
+    font-size: 40px;
+}
+
+.services .item h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services .brdr {
+    width: 40px;
+    height: 1.5px;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.services .item:hover .brdr {
+    width: 60px;
+}
+
+.services .item p {
+    line-height: 1.5;
+}
+
+/* *********************************************************************************************************** */
+
+.freelance-caption a {
+    border: 2px solid #f5f5f5;
+    color: #fff;
+    padding: 15px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    border: 1px solid #e65f78;
+    transition: all 0.5s;
+}
+
+.freelance-caption a:hover {
+    background-color: #d8576f;
+    border-color: #d8576f;
+}
+
+/* *********************************************************************************************************** */
+
+.client .client-item .icon i {
+    font-size: 40px;
+}
+
+.client .client-item .review {
+    font-size: 18px;
+    max-width: 750px;
+}
+
+.client .carousel-indicators li {
+    background-color: #e65f78;
+    width: 12px;
+    height: 5px;
+    border: 0.1px solid #e65f78;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.client .carousel-indicators .active {
+    width: 20px;
+}
+
+/* *********************************************************************************************************** */
+
+.work .nav-pills .nav-link.active {
+    background-color: #e65f78;
+    color: #fff;
+}
+
+.work .nav-pills .nav-link {
+    color: #000;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 0.5rem;
+    border-radius: 30px;
+    padding: 6px 16px;
+    transition: all 0.5s;
+}
+
+.work .nav-pills .nav-link:hover {
+    background-color: #e65f78;
+    color: #fff;
+}
+
+.work .item img {
+    transition: transform 0.5s;
+}
+
+.work .item:hover img {
+    transform: scale(1.05);
+}
+
+.work .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.work .item:hover .overlay {
+    opacity: 1;
+}
+
+.work .overlay-caption {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.work .item:hover .overlay-caption {
+    transform: translateY(0);
+}
+
+.work .overlay p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.work .overlay h4 {
+    font-size: 18px;
+}
+
+/* *********************************************************************************************************** */
+
+.contact .contact-item .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.contact .contact-item .icon i {
+    font-size: 2.5rem;
+    color: #e65f78;
+}
+
+.contact .contact-item h3 {
+    font-size: 18px;
+}
+
+.form-control {
+    padding: 1.5rem .75rem;
+}
+
+.contact form .btn {
+    padding: 15px 32px;
+    transition: background-color 0.5s;
+}
+
+.contact form .btn:hover {
+    background-color: #d8576f;
+}
+
+/* *********************************************************************************************************** */
+
+footer {
+    background-color: #242424;
+}
+
+footer .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(241, 241, 241, 0.08);
+    border-radius: 50%;
+    margin: 1rem 0.25rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+footer .icon:hover {
+    background-color: #e65f78;
+    color: #fff;
+}
+
+footer .icon i {
+    font-size: 18px;
+}
